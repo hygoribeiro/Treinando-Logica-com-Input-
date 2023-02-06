@@ -1,9 +1,10 @@
 import entradaDados from 'readline-sync';
 
+//entrada de dados
 let nome = entradaDados.question("digite seu nome: ");
 
 let idade = entradaDados.question("qual e a sua idade?:")
-
+//tratando dados
 console.log(`ola ${nome} vc tem ${idade} correto?`)
     
 let verdade = entradaDados.question("Sim ou Nao ?");
@@ -13,6 +14,7 @@ if(verdade === "sim"){
     
 };
 
+// verificando erro de sintax
 while(verdade !== "sim" && verdade !== "nao"){
     
     console.log("comando innvalido repita o procedimento novamente")
@@ -24,6 +26,7 @@ while(verdade !== "sim" && verdade !== "nao"){
 
 };
 
+//verificando idade correta
 while(verdade === "nao"){
     if (verdade === "nao"){
         idade = entradaDados.question("intao repita sua idade ?");
