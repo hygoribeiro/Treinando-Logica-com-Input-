@@ -6,4 +6,4 @@ const celsiusINput = entradaDados.question("informe o valor em Celsius que desej
 
 const celsuisParaKelvim = parseFloat(celsiusINput + 273) ;
 
-console.log(`resultado da converção de ${celsiusINput} Celsius e = ${celsuisParaKelvim} kelvim`);
+console.log(`resultado da converção de ${celsiusINput}ºC e = ${celsuisParaKelvim} kelvim`);
