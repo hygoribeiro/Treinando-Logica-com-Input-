@@ -10,6 +10,7 @@ let meses = [
     "setempro",
     "outubro",
     "novembro",
-    "dezenbro"
-];
-console.log (meses);
+    "dezembro"
+]; 
+const ultimoIndice = meses.length
+console.log (meses[ultimoIndice -12]);
