@@ -9,13 +9,13 @@ for(let curso of cursos){
     let valorHora = curso.preco / curso.cargaHoraria;
 
     console.log(`nome do curso ${curso.name}`);
-    console.log(`carga Horaria do curso ${curso.cargaHoraria}`);
-    console.log(`preco do curso ${curso.preco}`);
+    console.log(`carga Horaria do curso ${curso.cargaHoraria} Horas`);
+    console.log(`preco do curso ${curso.preco},00`);
 
  if( valorHora < 15){
-    console.log("Aula/Hora e inferior que 15$");
+    console.log("Aula/Hora e inferior que 15,00$");
  }else{
-    console.log("Aula/Hora e superior a 15$");
+    console.log("Aula/Hora e superior a 15,00$");
  }
  console.log("")
 }
