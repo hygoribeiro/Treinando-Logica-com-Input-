@@ -8,8 +8,9 @@ let contador = 0;
 const media = () => {
     let notas = alunos[contador];
     return(notas.nota1 + notas.nota2) /2;
-}
-const passou = () => {
+};
+
+const aprovadoReprovado = () => {
     if(media() >= 7 ){
         console.log(`esse alunos forão aprovados ${alunos[contador].nome} com mdeia ${media()}`)
     }else{
@@ -17,10 +18,10 @@ const passou = () => {
         console.log(`esses alunos forão reprovados ${alunos[contador].nome} com media ${media()}`)
     }
 
-}
+};
 
 while(contador < alunos.length){
-    passou()
+    aprovadoReprovado()
     contador ++
 }
 
