@@ -5,13 +5,12 @@ const alunos = [
     {nome: "Joaquina", nota1: 10, nota2:3},
 ];
 let contador = 0;
+const media = () => {
+    let notas = alunos[contador];
+    return(notas.nota1 + notas.nota2) /2;
+}
 
 while(contador < alunos.length){
-    let notas = alunos[contador];
-
-    const media = () => {
-        return(notas.nota1 + notas.nota2) /2;
-    }
     if(media() >= 7 ){
         console.log(`esse alunos forão aprovados ${alunos[contador].nome} com mdeia ${media()}`)
     }else{
