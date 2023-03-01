@@ -16,7 +16,6 @@ var turmas = alunos[0];
 
 for(var turmas of alunos){
     
-    
     console.log(turmas.name)
     console.log(turmas.media())
 }
